@@ -17,28 +17,28 @@
               data_train, data_test = train_test_split(data_set, test_size = 0.2, random_state = 100)
 :
 [2020-10-29] Learn Data Analysis, do Lab 8 A. Install numpy, pandas, matplotlibs and such packages. Numpy can help me to process data in a easy way. Pandas helps me to get a intuitive and easy handling data. Matplotlibs helps to plot a figure that I want, to see how the data change. Here are some code from me.
-              import matplotlib.pyplot as plt
-              plt.style.use('seaborn-whitegrid')
-              import numpy as np
-              noise_scale = 100
-              number_of_samples = 50
-              x =  25*(np.random.rand(number_of_samples,1) -0.8)
-              y = 5 * x + 20 * x**2 + 1 * x**3 + noise_scale*np.random.randn(number_of_samples, 1)
-              x1 = []
-              y1 = []
-              for m in range(0,number_of_samples):
-                  x1.append(x[m][0])
-                  y1.append(y[m][0])
-              xvals = np.linspace(min(x1),max(x1))
-              z1 = np.polyfit(x1,y1,3)
-              p1 = np.poly1d(z1)
-              plt.xlabel('x')
-              plt.ylabel('y')
-              plt.plot(xvals, p1(xvals), 'b', label = 'graph for m=3')
-              plt.plot(x,y,'ro',label = 'noisy data')
-              plt.legend()
-              plt.show()
-              print(p1)
+              import matplotlib.pyplot as plt  
+              plt.style.use('seaborn-whitegrid')  
+              import numpy as np  
+              noise_scale = 100  
+              number_of_samples = 50  
+              x =  25*(np.random.rand(number_of_samples,1) -0.8)  
+              y = 5 * x + 20 * x**2 + 1 * x**3 + noise_scale*np.random.randn(number_of_samples, 1)  
+              x1 = []  
+              y1 = []  
+              for m in range(0,number_of_samples):  
+                  x1.append(x[m][0])  
+                  y1.append(y[m][0])  
+              xvals = np.linspace(min(x1),max(x1))  
+              z1 = np.polyfit(x1,y1,3)  
+              p1 = np.poly1d(z1)  
+              plt.xlabel('x')  
+              plt.ylabel('y')  
+              plt.plot(xvals, p1(xvals), 'b', label = 'graph for m=3')  
+              plt.plot(x,y,'ro',label = 'noisy data')  
+              plt.legend()  
+              plt.show()  
+              print(p1)  
 :
 [2020-10-22] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
 :  
