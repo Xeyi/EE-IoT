@@ -1,13 +1,13 @@
 # EE-IoT
-[2020-12-10] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
+[2020-12-10] Completed the project, Using OpenCV to read the image with '.pgm' form. Using sklearn to build a decision tree module, and trained the module with a dataset. Finally, completed the recognizing process.    
 :  
-[2020-12-03] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
+[2020-12-03] Work on final project about facial recognizition, inport OpenCV to read the image. Deciding to use Decision Tree as the algorithm.  
 :  
-[2020-11-26] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
+[2020-11-26] Implemented Lab 10 B, about IOTA. Installed pyota.  
 :  
-[2020-11-19] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
+[2020-11-19] Learn lession 10. Implemented Lab 10 A, learnt SHA-2 Secure Hash Algorithm and try to build the tiniest blockchain in less than 50 lines of Python by Gerald Nash.  
 :  
-[2020-11-12] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
+[2020-11-12] Install YANG(pip3 install -U lxml pyang) and PlantUML, learn lab 9A.  
 :  
 [2020-11-05] Learn sklearn, using sklearn to implement some algorithm and module. Sklearn has so many useful packages, sklearn.model_selection/train_test_split, sklearn.tree /DecisionTreeClassifier, sklearn.metrics/accuracy_score, sklearn.tree, sklearn.preprocessing and so on. Also I worked on Lab 8B to try histograms, box plots, regression, and classification. Also I used cross-validation to check data in titanic table.  
               data_set=pd.read_csv("Titanic.csv")  
