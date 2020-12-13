@@ -1,4 +1,45 @@
 # EE-IoT
+[2020-12-10] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.
+:
+[2020-12-03] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.
+:
+[2020-11-26] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.
+:
+[2020-11-19] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.
+:
+[2020-11-12] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.
+:
+[2020-11-05] Learn sklearn, using sklearn to implement some algorithm and module. Sklearn has so many useful packages, sklearn.model_selection/train_test_split, sklearn.tree /DecisionTreeClassifier, sklearn.metrics/accuracy_score, sklearn.tree, sklearn.preprocessing and so on. Also I worked on Lab 8B to try histograms, box plots, regression, and classification. Also I used cross-validation to check data in titanic table.
+              data_set=pd.read_csv("Titanic.csv")
+              data_set['pclass'] = data_set['pclass'].replace({'1st':1,'2nd':2,'3rd':3}).astype(int)
+              data_set['sex'] = data_set['sex'].replace({'female':0,'male':1}).astype(int)
+              data_set.fillna('0',inplace = True)
+              data_train, data_test = train_test_split(data_set, test_size = 0.2, random_state = 100)
+:
+[2020-10-29] Learn Data Analysis, do Lab 8 A. Install numpy, pandas, matplotlibs and such packages. Numpy can help me to process data in a easy way. Pandas helps me to get a intuitive and easy handling data. Matplotlibs helps to plot a figure that I want, to see how the data change. Here are some code from me.
+              import matplotlib.pyplot as plt
+              plt.style.use('seaborn-whitegrid')
+              import numpy as np
+              noise_scale = 100
+              number_of_samples = 50
+              x =  25*(np.random.rand(number_of_samples,1) -0.8)
+              y = 5 * x + 20 * x**2 + 1 * x**3 + noise_scale*np.random.randn(number_of_samples, 1)
+              x1 = []
+              y1 = []
+              for m in range(0,number_of_samples):
+                  x1.append(x[m][0])
+                  y1.append(y[m][0])
+              xvals = np.linspace(min(x1),max(x1))
+              z1 = np.polyfit(x1,y1,3)
+              p1 = np.poly1d(z1)
+              plt.xlabel('x')
+              plt.ylabel('y')
+              plt.plot(xvals, p1(xvals), 'b', label = 'graph for m=3')
+              plt.plot(x,y,'ro',label = 'noisy data')
+              plt.legend()
+              plt.show()
+              print(p1)
+:
 [2020-10-22] Learn MATLAB, do Lab 7 A and B. I'm interesting in face recognition and then find some resource from https://ai.aliyun.com/. Trying to install and run SDK on my Respberry Pi.  
 :  
 [2020-10-15] Do Lab6 A and B.  Install and login Particle-Agent.   
